@@ -32,7 +32,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **EPIDISC** (Medical Discovery and Intelligence System for Consultation) is a private, medical-focused consultation system integrating biological knowledge with medical specialties for patient consultation and second opinions.
 
-**Version**: 1.0.0
+**Version**: 2.0.0
 **Focus**: Private medical consultation and second opinions
 **Privacy**: All patient records stored locally (no external LLM transmission)
 
