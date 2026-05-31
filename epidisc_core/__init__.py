@@ -720,3 +720,177 @@ except ImportError:
     create_enhanced_epidisc_system = None
     create_epidisc_with_coordination = None
     create_epidisc_minimal = None
+
+# =============================================================================
+# TRANSFORMATIVE V2.0 - 8 Transformative Architectures (May 2026)
+# =============================================================================
+try:
+    from .transformative_system import (
+        TransformativeEpiDISCSystem,
+        create_transformative_epidisc_system,
+        create_epidisc_system_v2
+    )
+except ImportError:
+    TransformativeEpiDISCSystem = None
+    create_transformative_epidisc_system = None
+    create_epidisc_system_v2 = None
+
+# Digital Twin Core
+try:
+    from .digital_twin.digital_twin_engine import (
+        DigitalTwinEngine,
+        DigitalTwinFactory,
+        create_digital_twin
+    )
+except ImportError:
+    DigitalTwinEngine = None
+    DigitalTwinFactory = None
+    create_digital_twin = None
+
+# Data Stream Integration
+try:
+    from .digital_twin.data_streams.integration_framework import (
+        DataStreamIntegration,
+        create_wearable_integration,
+        WearableDeviceIntegration
+    )
+except ImportError:
+    DataStreamIntegration = None
+    create_wearable_integration = None
+    WearableDeviceIntegration = None
+
+# Predictive Models
+try:
+    from .digital_twin.predictive_models.seizure_risk_forecaster import (
+        SeizureRiskForecaster,
+        RiskPredictionEngine,
+        create_risk_forecaster,
+        create_prediction_engine
+    )
+except ImportError:
+    SeizureRiskForecaster = None
+    RiskPredictionEngine = None
+    create_risk_forecaster = None
+    create_prediction_engine = None
+
+# Emotional-Cognitive Integration
+try:
+    from .emotional_health.emotional_integration import (
+        EmotionalHealthMonitor,
+        CognitiveFunctionMonitor,
+        PsychiatricCareIntegrator,
+        QualityOfLifeTracker,
+        EmotionalCognitiveIntegrator,
+        create_emotional_cognitive_system
+    )
+except ImportError:
+    EmotionalHealthMonitor = None
+    CognitiveFunctionMonitor = None
+    PsychiatricCareIntegrator = None
+    QualityOfLifeTracker = None
+    EmotionalCognitiveIntegrator = None
+    create_emotional_cognitive_system = None
+
+# Research Gateway
+try:
+    from .research_gateway.research_integration import (
+        ClinicalTrialMatcher,
+        ResearchMonitor,
+        CompassionateUseNavigator,
+        OutcomesAggregator,
+        ResearchGateway,
+        create_research_gateway
+    )
+except ImportError:
+    ClinicalTrialMatcher = None
+    ResearchMonitor = None
+    CompassionateUseNavigator = None
+    OutcomesAggregator = None
+    ResearchGateway = None
+    create_research_gateway = None
+
+# Therapeutic Alliance
+try:
+    from .therapeutic_alliance.alliance_builder import (
+        ContinuousCheckInSystem,
+        PatientEducationEngine,
+        PatientEmpowermentEngine,
+        CommunityConnectionManager,
+        TherapeuticAllianceBuilder,
+        create_therapeutic_alliance
+    )
+except ImportError:
+    ContinuousCheckInSystem = None
+    PatientEducationEngine = None
+    PatientEmpowermentEngine = None
+    CommunityConnectionManager = None
+    TherapeuticAllianceBuilder = None
+    create_therapeutic_alliance = None
+
+# Genomic Precision Medicine
+try:
+    from .genomic_precision.genomic_medicine import (
+        GeneticEpilepsySpecialist,
+        PharmacogenomicsAnalyzer,
+        PrecisionPrescriber,
+        GenomicPrecisionIntegrator,
+        create_genomic_precision_system
+    )
+except ImportError:
+    GeneticEpilepsySpecialist = None
+    PharmacogenomicsAnalyzer = None
+    PrecisionPrescriber = None
+    GenomicPrecisionIntegrator = None
+    create_genomic_precision_system = None
+
+# Seizure Freedom Ecosystem
+try:
+    from .seizure_freedom.life_optimization import (
+        SUDEPPreventionSpecialist,
+        IndependenceSpecialist,
+        ReproductiveHealthSpecialist,
+        LifeCoursePlanner,
+        SeizureFreedomEcosystem,
+        create_seizure_freedom_ecosystem
+    )
+except ImportError:
+    SUDEPPreventionSpecialist = None
+    IndependenceSpecialist = None
+    ReproductiveHealthSpecialist = None
+    LifeCoursePlanner = None
+    SeizureFreedomEcosystem = None
+    create_seizure_freedom_ecosystem = None
+
+# Environmental Trigger Mapping
+try:
+    from .environmental_mapping.trigger_analysis import (
+        EnvironmentalTriggerMapper,
+        LifestylePatternAnalyzer,
+        WorkplaceAssessment,
+        TriggerMitigationSpecialist,
+        EnvironmentalTriggerIntegrator,
+        create_environmental_trigger_system
+    )
+except ImportError:
+    EnvironmentalTriggerMapper = None
+    LifestylePatternAnalyzer = None
+    WorkplaceAssessment = None
+    TriggerMitigationSpecialist = None
+    EnvironmentalTriggerIntegrator = None
+    create_environmental_trigger_system = None
+
+# Therapeutic Optimization
+try:
+    from .therapeutic_optimization.treatment_planning import (
+        RealWorldEffectivenessTracker,
+        DoseOptimizationEngine,
+        CombinationTherapyPlanner,
+        TreatmentOptimizationEngine,
+        create_therapeutic_optimization_system
+    )
+except ImportError:
+    RealWorldEffectivenessTracker = None
+    DoseOptimizationEngine = None
+    CombinationTherapyPlanner = None
+    TreatmentOptimizationEngine = None
+    create_therapeutic_optimization_system = None
