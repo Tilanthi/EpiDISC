@@ -1,0 +1,22 @@
+{
+  "patient_id": "cross_link_test",
+  "demographics": {
+    "age": 40
+  },
+  "medical_records": [
+    {
+      "patient_id": "cross_link_test",
+      "record_type": "text",
+      "content": "Test content",
+      "original_file": null,
+      "timestamp": "2026-05-31T14:20:11.363844",
+      "metadata": {},
+      "confidentiality_level": "high"
+    }
+  ],
+  "seizure_history": [],
+  "medication_history": [],
+  "consultation_notes": [],
+  "created_date": "2026-05-31T14:20:11.363269",
+  "last_updated": "2026-05-31T14:20:11.363847"
+}

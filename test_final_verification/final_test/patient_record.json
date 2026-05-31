@@ -1,0 +1,13 @@
+{
+  "patient_id": "final_test",
+  "demographics": {
+    "age": 40,
+    "gender": "male"
+  },
+  "medical_records": [],
+  "seizure_history": [],
+  "medication_history": [],
+  "consultation_notes": [],
+  "created_date": "2026-05-31T14:22:36.022313",
+  "last_updated": "2026-05-31T14:22:36.022318"
+}
