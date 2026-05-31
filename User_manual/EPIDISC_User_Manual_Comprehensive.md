@@ -65,47 +65,21 @@ EPIDISC is built on the principle that medical consultation should be:
 
 ### 2.1 Overview
 
-EPIDISC consists of multiple integrated layers designed to provide comprehensive medical consultation while maintaining privacy and enabling innovative research exploration.
+EPIDISC consists of multiple integrated layers designed to provide comprehensive medical consultation while maintaining privacy and enabling innovative research exploration. The architecture diagram below illustrates the complete system design.
 
 [[ARCHITECTURE_DIAGRAM]]
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    USER INTERFACE LAYER                          │
-│  Natural Language Queries | Dashboard (Port 8790)               │
-│  Multi-Specialty Consultation | Patient Records Management      │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│              MEDICAL SPECIALTY LAYER                             │
-│  ┌─────────────┬─────────────┬─────────────┬─────────────┐      │
-│  │ Cardiology  │  Epilepsy   │ General Pr. │ Orthopedics │      │
-│  │             │   v3.0.0    │             │             │      │
-│  └─────────────┴─────────────┴─────────────┴─────────────┘      │
-│  Pharmacology | Neurology | Emergency Medicine                   │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│            BIOLOGICAL KNOWLEDGE LAYER (Preserved)                 │
-│  Molecular Biology | Biochemistry | Genetics | Cell Biology      │
-│  Biophysics | Bioinformatics | Genomics | Proteomics              │
-│  Systems Biology | Computational Biology                         │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│              ADVANCED CAPABILITIES LAYER                         │
-│  Causal Reasoning | Meta-Learning | Swarm Intelligence          │
-│  Meta-Context Engine | Counterfactual Analysis                    │
-│  Innovative Research Synthesis | Evidence Integration            │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│                   MEMORY & PRIVACY LAYER                          │
-│  Persistent Memory | Anti-Hallucination | Local Storage          │
-│  Patient Records (epidisc_core/data/patients/)                   │
-│  No External Transmission | HIPAA/GDPR Compliant                 │
-└─────────────────────────────────────────────────────────────────┘
-```
+**Figure 1: EPIDISC System Architecture v1.0.0**
+
+The system architecture demonstrates how user queries flow through five distinct layers:
+
+The system architecture demonstrates how user queries flow through five distinct layers:
+
+**Layer 1 - User Interface**: Natural language input and web dashboard
+**Layer 2 - Medical Specialties**: Six specialty domains including Epilepsy v3.0.0
+**Layer 3 - Biological Knowledge**: Ten preserved biology domains
+**Layer 4 - Advanced Capabilities**: Causal reasoning, meta-learning, research synthesis
+**Layer 5 - Memory & Privacy**: Local-only storage with anti-hallucination protection
 
 ### 2.2 Medical Specialties Available
 
@@ -117,9 +91,9 @@ EPIDISC consists of multiple integrated layers designed to provide comprehensive
 - Epilepsy syndrome recognition
 - Treatment-resistant epilepsy evaluation
 - Pre-surgical evaluation considerations
-- **Ontology-based semantic reasoning**
-- **Multi-format medical records processing**
-- **Patient context-aware consultation**
+- Ontology-based semantic reasoning
+- Multi-format medical records processing
+- Patient context-aware consultation
 
 **Cardiology**
 - ECG/EKG interpretation
@@ -155,13 +129,13 @@ EPIDISC consists of multiple integrated layers designed to provide comprehensive
 
 ### 2.3 Data Flow
 
-1. **User Query** → Natural language processing
-2. **Domain Selection** → Automatic specialty routing
-3. **Knowledge Retrieval** → Medical + biological knowledge integration
-4. **Reasoning** → Advanced causal inference and synthesis
-5. **Verification** → Anti-hallucination checking
-6. **Response Generation** → Confidence-scored consultation
-7. **Local Storage** → Patient records stored securely
+1. **User Query** - Natural language processing
+2. **Domain Selection** - Automatic specialty routing
+3. **Knowledge Retrieval** - Medical + biological knowledge integration
+4. **Reasoning** - Advanced causal inference and synthesis
+5. **Verification** - Anti-hallucination checking
+6. **Response Generation** - Confidence-scored consultation
+7. **Local Storage** - Patient records stored securely
 
 ---
 
@@ -311,7 +285,7 @@ Question: "Patient with seizure, what AED should I start?"
 - Specialist referral guidance
 
 **Orthopedics Domain**
-- Fractacture assessment and management
+- Fracture assessment and management
 - Joint pain evaluation
 - Sports injury management
 - Arthritis treatment options
@@ -712,10 +686,10 @@ When querying innovative treatments, EPIDISC provides information about:
 
 EPIDISC is designed with privacy as the foundational principle:
 
-✅ **Local Storage Only**: All patient data stored on your local machine  
-✅ **No External Transmission**: No patient information sent to external servers  
-✅ **Natural Language Privacy**: Consultations remain in your local environment  
-✅ **Persistent Privacy**: Privacy settings maintained across sessions  
+- **Local Storage Only**: All patient data stored on your local machine
+- **No External Transmission**: No patient information sent to external servers
+- **Natural Language Privacy**: Consultations remain in your local environment
+- **Persistent Privacy**: Privacy settings maintained across sessions
 
 ### 9.2 Data Storage Locations
 
@@ -881,17 +855,17 @@ If issues persist:
 ### 12.2 System Limitations
 
 EPIDISC is designed to:
-- ✅ Provide second opinions on epilepsy and neurological conditions
-- ✅ Assist with EEG interpretation guidance
-- ✅ Offer consultation on seizure management
-- ✅ Provide cross-specialty consultation
-- ✅ Deliver health information and education
+- Provide second opinions on epilepsy and neurological conditions
+- Assist with EEG interpretation guidance
+- Offer consultation on seizure management
+- Provide cross-specialty consultation
+- Deliver health information and education
 
 EPIDISC is NOT designed to:
-- ❌ Replace professional medical diagnosis
-- ❌ Make treatment decisions without physician oversight
-- ❌ Handle medical emergencies
-- ❌ Replace clinical judgment
+- Replace professional medical diagnosis
+- Make treatment decisions without physician oversight
+- Handle medical emergencies
+- Replace clinical judgment
 
 ### 12.3 Emergency Care
 

@@ -185,7 +185,7 @@ def create_pdf(md_file, pdf_file, diagram_path):
         # Handle architecture diagram marker
         elif '[[ARCHITECTURE_DIAGRAM]]' in line:
             if os.path.exists(diagram_path):
-                img = Image(diagram_path, width=5*inch, height=6*inch)
+                img = Image(diagram_path, width=5.5*inch, height=7*inch, hAlign='CENTER')
                 story.append(img)
                 story.append(Spacer(1, 0.3*inch))
 
@@ -233,9 +233,9 @@ def main():
     print("EPIDISC PDF Generator")
     print("=" * 50)
 
-    md_file = "EPIDISC_Comprehensive_Manual.md"
+    md_file = "User_manual/EPIDISC_User_Manual_Comprehensive.md"
     pdf_file = "User_manual/EPIDISC_User_Manual_Comprehensive.pdf"
-    diagram_path = "epidisc_architecture_diagram.png"
+    diagram_path = "User_manual/epidisc_architecture_diagram.png"
 
     if not os.path.exists(md_file):
         print(f"✗ Error: {md_file} not found")
