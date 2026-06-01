@@ -66,6 +66,14 @@ from .persistent.session_recovery import (
     create_session_recovery
 )
 
+# V4.3 Context Summary System (for managing long conversations)
+from .context_summary import (
+    ContextSummary,
+    create_context_summary,
+    restore_conversation_context,
+    get_context_status
+)
+
 # V4.1 Kernel-Based Memory Systems
 try:
     from .kernel_associative_memory import (
@@ -158,6 +166,11 @@ __all__ = [
     "update_hallucination_entry",
     "clear_hallucination_register",
     "print_hallucinations_table",
+    # V4.3 Context Summary System (manages long conversations)
+    "ContextSummary",
+    "create_context_summary",
+    "restore_conversation_context",
+    "get_context_status",
 ]
 
 # Add V4.1 Kernel Memory exports if available

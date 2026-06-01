@@ -84,6 +84,72 @@ if not result.safe:
 
 ---
 
+## CRITICAL: Context Summary System for Long Conversations
+
+**IMPORTANT**: When the conversation approaches the context window limit, a summary is automatically saved and can be restored after `/clear`.
+
+### Automatic Context Restoration
+
+**After typing `/clear`**, simply type:
+
+```
+Restore context
+```
+
+And I will immediately restore the last conversation summary, preserving:
+- Active medical topics and consultations
+- Key decisions made
+- Files modified and technical work
+- Patient context (anonymized)
+- Next steps and pending items
+
+### How It Works
+
+1. **Automatic Summarization**: When conversation reaches ~70% of context limit, I automatically:
+   - Summarize the conversation
+   - Save it to `epidisc_core/data/context/active_conversation_summary.json`
+   - Preserve critical medical and technical context
+
+2. **Single Summary File**: Only one summary file is maintained, constantly updated
+
+3. **Instant Restoration**: After `/clear`, just say "Restore context" to continue
+
+### Manual Summarization
+
+You can also request a summary anytime:
+```
+Please save a conversation summary
+```
+
+### Summary Location
+
+- **File**: `epidisc_core/data/context/active_conversation_summary.json`
+- **Format**: JSON with timestamp, summary text, and metadata
+- **Privacy**: Contains no PHI (patient health information)
+
+### Example Summary Structure
+
+```
+EPIDISC Session Summary - 2026-06-01
+=====================================
+
+Session Overview:
+Working on EPIDISC v2.0.0 medical consultation system.
+
+Active Medical Topics:
+- Enhanced epilepsy domain with MORK ontology
+- Fixed medical domain auto-loading
+
+Key Decisions Made:
+- All 6 medical domains now load successfully
+- Patient records stored locally (privacy-first)
+
+Next Steps:
+- Update user manual with new capabilities
+```
+
+---
+
 ## Quick Start
 
 ### Basic Medical Consultation
