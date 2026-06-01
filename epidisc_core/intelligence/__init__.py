@@ -5,8 +5,9 @@ This package provides:
 - Digital Pheromone Dynamics: Stigmergic coordination
 - LEAPCore Evolution: Evolutionary meta-theory refinement
 - Swarm Orchestrator: Agent coordination
+- Three-Fold Intelligence: Process-substrate architecture (NEW)
 
-Version: 37.0
+Version: 38.0 (Enhanced with Process-Substrate Intelligence)
 """
 
 from .pheromone_dynamics import (
@@ -39,7 +40,32 @@ from .orchestrator import (
     AgentMessage
 )
 
-__version__ = "37.0"
+# Three-Fold Process-Substrate Intelligence (NEW)
+from .process_substrate import (
+    ProcessSubstrateIntelligence,
+    ProcessSubstrateResponse,
+    create_process_substrate_system
+)
+
+from .folds.self_teaching import (
+    SelfTeachingIntelligence,
+    AdaptiveLearningModule,
+    PatternRecognizer
+)
+
+from .folds.self_organizing import (
+    SelfOrganizingIntelligence,
+    SystemicCoherenceModule,
+    EquilibriumMaintainer
+)
+
+from .folds.self_distributing import (
+    SelfDistributingIntelligence,
+    SpecialtyCoordinator,
+    ConsensusBuilder
+)
+
+__version__ = "38.0"
 
 __all__ = [
     # Pheromone Dynamics
@@ -67,5 +93,23 @@ __all__ = [
     'AgentType',
     'AgentState',
     'AgentConfig',
-    'AgentMessage'
+    'AgentMessage',
+
+    # Process-Substrate Intelligence
+    'ProcessSubstrateIntelligence',
+    'ProcessSubstrateResponse',
+    'create_process_substrate_system',
+
+    # Three Folds
+    'SelfTeachingIntelligence',
+    'SelfOrganizingIntelligence',
+    'SelfDistributingIntelligence',
+
+    # Fold Components
+    'AdaptiveLearningModule',
+    'PatternRecognizer',
+    'SystemicCoherenceModule',
+    'EquilibriumMaintainer',
+    'SpecialtyCoordinator',
+    'ConsensusBuilder'
 ]

@@ -1,5 +1,7 @@
 """
 Domain Knowledge - Priors and specifications for CLD, D1 (epidemiology), D2 (economics)
+
+Enhanced with GRAIL-style medical knowledge system with contradiction preservation.
 """
 
 import json
@@ -22,4 +24,33 @@ def load_ontology_definitions():
     with open(ontology_path, 'r') as f:
         return json.load(f)
 
-__all__ = ['load_tu_prime', 'load_domain_priors', 'load_ontology_definitions']
+# GRAIL Medical Knowledge System (NEW)
+from .med_grail import (
+    MedicalGRAIL,
+    MedicalClaim,
+    ContradictionNode,
+    GRAILQueryResult,
+    EvidenceGraph,
+    ContradictionMapper,
+    SynthesisGenerator,
+    create_grail_system,
+    query_medical_evidence
+)
+
+__all__ = [
+    # Existing functions
+    'load_tu_prime',
+    'load_domain_priors',
+    'load_ontology_definitions',
+
+    # GRAIL System
+    'MedicalGRAIL',
+    'MedicalClaim',
+    'ContradictionNode',
+    'GRAILQueryResult',
+    'EvidenceGraph',
+    'ContradictionMapper',
+    'SynthesisGenerator',
+    'create_grail_system',
+    'query_medical_evidence'
+]
